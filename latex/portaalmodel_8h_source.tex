@@ -1,0 +1,40 @@
+\hypertarget{portaalmodel_8h_source}{}\doxysection{portaalmodel.\+h}
+\label{portaalmodel_8h_source}\index{src/models/portaalmodel.h@{src/models/portaalmodel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_PORTAALMODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_PORTAALMODEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../position.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}model.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }vlees::model\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{PortaalModel}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1model_1_1Model}{Model}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ upposition\ =\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(0,\ 0);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ downposition\ =\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(0,\ 0);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::string\ downrichting;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ std::string\ uprichting;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \textcolor{keywordtype}{id}\{\};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{PortaalModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ up,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ down,\ \textcolor{keywordtype}{char}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{PortaalModel}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ getUpPosition()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ getDownPosition()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{PortaalModel}}\&\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{PortaalModel}}\&\ other);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ getId()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addDown(\mbox{\hyperlink{classvlees_1_1Position}{Position}}\ point);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ adjustPosition(\textcolor{keywordtype}{double}\ seconds)\textcolor{keyword}{\ override}\{\};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::string\ getUpRichting()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::string\ getDownRichting()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setUpRichting(std::string\ richting);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDownRichting(std::string\ richting);}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ \}\ \textcolor{comment}{//\ namespace\ vlees::model}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_PORTAALMODEL\_H}}
+
+\end{DoxyCode}

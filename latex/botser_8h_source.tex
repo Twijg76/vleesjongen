@@ -1,0 +1,58 @@
+\hypertarget{botser_8h_source}{}\doxysection{botser.\+h}
+\label{botser_8h_source}\index{src/botser.h@{src/botser.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_BOTSER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_BOTSER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}events/baseevent.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}events/goaltouch.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}events/jongendood.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}events/portaalevent.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}models/movingblokmodel.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}models/movingstekelmodel.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}models/portaalmodel.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}object.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}position.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }vlees\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1Botser}{Botser}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1observer_1_1Object}{observer::Object}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{observer::Observer}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::vector<Position>\ blokken;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::vector<Position>\ stekels;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::vector<model::PortaalModel>\ portalen;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::vector<Position>\ movingblokken;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::vector<Position>\ movingstekels;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ doel\ =\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(0,\ 0);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ size\ =\ 50.0\ /\ 2.0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Botser}{Botser}}(\mbox{\hyperlink{classvlees_1_1Position}{vlees::Position}}\ doel,\ \textcolor{keyword}{const}\ std::vector<Position>\&\ blokken,\ \textcolor{keyword}{const}\ std::vector<Position>\&\ stekels);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addBlok(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ blok);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addStekel(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ stekel);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addMovingBlokken(\textcolor{keyword}{const}\ std::shared\_ptr<std::vector<model::MovingBlokModel>>\&\ moblokken);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addMovingStekels(\textcolor{keyword}{const}\ std::shared\_ptr<std::vector<model::MovingStekelModel>>\&\ mostekels);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addPortalen(\textcolor{keyword}{const}\ std::vector<model::PortaalModel>\&\ portalen);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDoel(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ dol);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Botser}{Botser}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ rechtsbots(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ oldpos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ newpos);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ bovenbots(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ oldpos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ newpos);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ onderbots(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ oldpos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ newpos);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ linksbots(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ oldpos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ newpos);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ std::string\ springsoort(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ pos);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ wintest(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ pos);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ doodtest(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ pos);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ portaaltest(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ pos);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ update(std::shared\_ptr<vlees::event::BaseEvent>\&\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ \}\ \textcolor{comment}{//\ namespace\ vlees}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_BOTSER\_H}}
+
+\end{DoxyCode}

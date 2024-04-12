@@ -1,0 +1,11 @@
+{
+  "layout": ["d",
+    "xx_____xx",
+    "x_x____xx",
+    "x_xx___xx",
+    "x_xxx__jx",
+    "xxxxxxxxx",
+    "xxxxxxxxx"
+  ],
+  "automove": 0.2
+}

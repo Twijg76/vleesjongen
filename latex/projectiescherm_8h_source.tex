@@ -1,0 +1,67 @@
+\hypertarget{projectiescherm_8h_source}{}\doxysection{projectiescherm.\+h}
+\label{projectiescherm_8h_source}\index{src/projectiescherm.h@{src/projectiescherm.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_PROJECTIESCHERM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_PROJECTIESCHERM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}botser.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}events/jongendood.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}events/jongenmovedevent.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}events/movablemovedevent.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}object.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}observer.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}position.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Color.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Texture.hpp>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }vlees\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1ProjectieScherm}{ProjectieScherm}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1observer_1_1Object}{observer::Object}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{observer::Observer}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ sf::Texture\ bloktexture;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ sf::Texture\ jongentexture;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ sf::Texture\ doeltexture;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ sf::Texture\ stekeltexture;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ sf::Texture\ portaaltexture;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ sf::Texture\ portaalondertexture;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ sf::Texture\ portaalboventexture;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ sf::Texture\ portaallinkertexture;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::vector<sf::Sprite>\ bloksprites;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::vector<sf::Sprite>\ stekelsprites;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::vector<sf::Sprite>\ portaalsprites;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ sf::Sprite\ jongensprite;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ sf::Sprite\ doelsprite;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ autoMove\ =\ 0.0;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ doel;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ jongen;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::vector<Position>\ blokken;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ std::vector<Position>\ stekels;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::vector<Position>\ movingblokken;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::vector<Position>\ movingstekels;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::vector<std::vector<Position>>\ portalen;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ baseline\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scale\ =\ 1;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ spritescale\ =\ 1;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ width\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ height\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ slider\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ spritewidth\ =\ 0;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1ProjectieScherm}{ProjectieScherm}}(std::vector<Position>\ blokken,\ std::vector<Position>\ stekels,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Position>\&\ movingblokken,\ \textcolor{keyword}{const}\ std::vector<Position>\&\ movingstekels,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ doelpos,\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ jongenpos,\ \textcolor{keywordtype}{float}\ automove,\ \textcolor{keywordtype}{float}\ breed,\ \textcolor{keywordtype}{float}\ hoog);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ update(std::shared\_ptr<event::BaseEvent>\&\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classvlees_1_1ProjectieScherm_aaa98ae7899e80c32b0459583e4f1f22d}{draw}}(\textcolor{keyword}{const}\ std::shared\_ptr<sf::RenderWindow>\&\ window);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addPortalen(std::vector<std::vector<Position>>\ portalen);}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ \}\ \textcolor{comment}{//\ namespace\ vlees}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_PROJECTIESCHERM\_H}}
+
+\end{DoxyCode}

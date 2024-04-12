@@ -1,0 +1,33 @@
+\hypertarget{position_8h_source}{}\doxysection{position.\+h}
+\label{position_8h_source}\index{src/position.h@{src/position.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_POSITION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_POSITION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }vlees\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1Position}{Position}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x;}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ getX()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ getY()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setX(\textcolor{keywordtype}{float}\ x);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setY(\textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ operator+(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ operator-\/(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ rhs)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ operator*(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ operator+=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ rhs);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ operator-\/=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ rhs);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ operator*=(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ c);}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \}\ \textcolor{comment}{//\ namespace\ vlees}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_POSITION\_H}}
+
+\end{DoxyCode}

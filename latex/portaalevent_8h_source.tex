@@ -1,0 +1,29 @@
+\hypertarget{portaalevent_8h_source}{}\doxysection{portaalevent.\+h}
+\label{portaalevent_8h_source}\index{src/events/portaalevent.h@{src/events/portaalevent.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_PORTAALEVENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_PORTAALEVENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../position.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}baseevent.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }vlees::event\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1event_1_1PortaalEvent}{PortaalEvent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{BaseEvent}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ dest;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ std::string\ fromrichting;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::string\ torichting;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1event_1_1PortaalEvent}{PortaalEvent}}(\mbox{\hyperlink{classvlees_1_1Position}{Position}}\ dest,\ std::string\ fromrichting,\ std::string\ torichting);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ std::string\&\ getFromrichting()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ std::string\&\ getTorichting()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\&\ getDest()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ \}\ \textcolor{comment}{//\ namespace\ vlees::event}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_PORTAALEVENT\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,37 @@
+{
+  "layout": [
+    "d",
+    "xxm_________jx",
+    "xx____m_____xx",
+    "xx__m___m__mxx",
+    "xxxxxxxxxxxxxx"
+  ],
+  "automove": 0,
+  "movers": [
+    {
+      "up" : 0,
+      "right": 9,
+      "type": "x"
+    },
+    {
+      "up": -3,
+      "right": 1,
+      "type": "s"
+    },
+    {
+      "up" : 3,
+      "right": 4,
+      "type": "s"
+    },
+    {
+      "up": 2,
+      "right": 0,
+      "type": "s"
+    },
+    {
+      "up": 2,
+      "right": -2,
+      "type": "s"
+    }
+  ]
+}

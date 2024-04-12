@@ -1,0 +1,94 @@
+\hypertarget{classvlees_1_1Botser}{}\doxysection{vlees\+::Botser Class Reference}
+\label{classvlees_1_1Botser}\index{vlees::Botser@{vlees::Botser}}
+Inheritance diagram for vlees\+::Botser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvlees_1_1Botser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a7ecd81c697bc4628246fbda0257aff25}\label{classvlees_1_1Botser_a7ecd81c697bc4628246fbda0257aff25}} 
+{\bfseries Botser} (\mbox{\hyperlink{classvlees_1_1Position}{vlees\+::\+Position}} doel, const std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ \&blokken, const std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ \&stekels)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a7d7023e72797adc541274e28887f4a73}\label{classvlees_1_1Botser_a7d7023e72797adc541274e28887f4a73}} 
+void {\bfseries add\+Blok} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&blok)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a1a37bb8cc9330e558724b6e1fc99279f}\label{classvlees_1_1Botser_a1a37bb8cc9330e558724b6e1fc99279f}} 
+void {\bfseries add\+Stekel} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&stekel)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_aa5fdf11869eb832ac6c26f42762382b7}\label{classvlees_1_1Botser_aa5fdf11869eb832ac6c26f42762382b7}} 
+void {\bfseries add\+Moving\+Blokken} (const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1model_1_1MovingBlokModel}{model\+::\+Moving\+Blok\+Model}} $>$ $>$ \&moblokken)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a16a200dc6ece4ffa291018d07627d4de}\label{classvlees_1_1Botser_a16a200dc6ece4ffa291018d07627d4de}} 
+void {\bfseries add\+Moving\+Stekels} (const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1model_1_1MovingStekelModel}{model\+::\+Moving\+Stekel\+Model}} $>$ $>$ \&mostekels)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a8e1a672f3c29e7c92b581ea253f4ed1f}\label{classvlees_1_1Botser_a8e1a672f3c29e7c92b581ea253f4ed1f}} 
+void {\bfseries add\+Portalen} (const std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{model\+::\+Portaal\+Model}} $>$ \&portalen)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a66c5e28a9b05c8f180a398ac82f6d55b}\label{classvlees_1_1Botser_a66c5e28a9b05c8f180a398ac82f6d55b}} 
+void {\bfseries set\+Doel} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&dol)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a90368806db3c7962507a504175771124}\label{classvlees_1_1Botser_a90368806db3c7962507a504175771124}} 
+bool {\bfseries rechtsbots} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&oldpos, const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&newpos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a805fe84a7228f1494596392aabdf7a1b}\label{classvlees_1_1Botser_a805fe84a7228f1494596392aabdf7a1b}} 
+bool {\bfseries bovenbots} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&oldpos, const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&newpos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a2cc62ceedefd742500b8aa67b180eada}\label{classvlees_1_1Botser_a2cc62ceedefd742500b8aa67b180eada}} 
+bool {\bfseries onderbots} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&oldpos, const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&newpos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_ab0fb37948a1746df94ac59c47f0464b4}\label{classvlees_1_1Botser_ab0fb37948a1746df94ac59c47f0464b4}} 
+bool {\bfseries linksbots} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&oldpos, const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&newpos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a795948a869fd8c08fe1799f7d33a32e4}\label{classvlees_1_1Botser_a795948a869fd8c08fe1799f7d33a32e4}} 
+std\+::string {\bfseries springsoort} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&pos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a73c8120bf33d0da0eb18b772a6bc0db5}\label{classvlees_1_1Botser_a73c8120bf33d0da0eb18b772a6bc0db5}} 
+void {\bfseries wintest} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&pos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_acc29aaba418486ad68773ca6db2890ad}\label{classvlees_1_1Botser_acc29aaba418486ad68773ca6db2890ad}} 
+void {\bfseries doodtest} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&pos)
+\item 
+\mbox{\Hypertarget{classvlees_1_1Botser_a573a3f18713d7eb514fd62a93ca74b80}\label{classvlees_1_1Botser_a573a3f18713d7eb514fd62a93ca74b80}} 
+void {\bfseries portaaltest} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&pos)
+\item 
+void \mbox{\hyperlink{classvlees_1_1Botser_aa61310946afb98435a2ba7408dcc48e6}{update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{vlees\+::event\+::\+Base\+Event}} $>$ \&event) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Object}{vlees\+::observer\+::\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}\label{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}} 
+void {\bfseries attach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}\label{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}} 
+void {\bfseries detach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}\label{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}} 
+void {\bfseries notify} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}\label{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}} 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{vlees\+::event\+::\+Base\+Event}} $>$ \&event)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlees_1_1Botser_aa61310946afb98435a2ba7408dcc48e6}\label{classvlees_1_1Botser_aa61310946afb98435a2ba7408dcc48e6}} 
+\index{vlees::Botser@{vlees::Botser}!update@{update}}
+\index{update@{update}!vlees::Botser@{vlees::Botser}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void vlees\+::\+Botser\+::update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{vlees\+::event\+::\+Base\+Event}} $>$ \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{vlees\+::observer\+::\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/botser.\+h\item 
+src/botser.\+cpp\end{DoxyCompactItemize}

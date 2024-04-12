@@ -1,0 +1,55 @@
+\hypertarget{classvlees_1_1ProjectieScherm}{}\doxysection{vlees\+::Projectie\+Scherm Class Reference}
+\label{classvlees_1_1ProjectieScherm}\index{vlees::ProjectieScherm@{vlees::ProjectieScherm}}
+Inheritance diagram for vlees\+::Projectie\+Scherm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvlees_1_1ProjectieScherm}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1ProjectieScherm_adea37de797c048c0ecbf20e2c32816c2}\label{classvlees_1_1ProjectieScherm_adea37de797c048c0ecbf20e2c32816c2}} 
+{\bfseries Projectie\+Scherm} (std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ blokken, std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ stekels, const std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ \&movingblokken, const std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ \&movingstekels, \mbox{\hyperlink{classvlees_1_1Position}{Position}} doelpos, \mbox{\hyperlink{classvlees_1_1Position}{Position}} jongenpos, float automove, float breed, float hoog)
+\item 
+\mbox{\Hypertarget{classvlees_1_1ProjectieScherm_a2e7246a4bcd4ce98c1bc1f8aa4339369}\label{classvlees_1_1ProjectieScherm_a2e7246a4bcd4ce98c1bc1f8aa4339369}} 
+void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event) override
+\item 
+void \mbox{\hyperlink{classvlees_1_1ProjectieScherm_aaa98ae7899e80c32b0459583e4f1f22d}{draw}} (const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&window)
+\item 
+\mbox{\Hypertarget{classvlees_1_1ProjectieScherm_acb9aba0a901b393fc40b48a97008f2d8}\label{classvlees_1_1ProjectieScherm_acb9aba0a901b393fc40b48a97008f2d8}} 
+void {\bfseries add\+Portalen} (std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classvlees_1_1Position}{Position}} $>$ $>$ portalen)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Object}{vlees\+::observer\+::\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}\label{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}} 
+void {\bfseries attach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}\label{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}} 
+void {\bfseries detach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}\label{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}} 
+void {\bfseries notify} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{vlees\+::observer\+::\+Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}\label{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}} 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{vlees\+::event\+::\+Base\+Event}} $>$ \&event)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlees_1_1ProjectieScherm_aaa98ae7899e80c32b0459583e4f1f22d}\label{classvlees_1_1ProjectieScherm_aaa98ae7899e80c32b0459583e4f1f22d}} 
+\index{vlees::ProjectieScherm@{vlees::ProjectieScherm}!draw@{draw}}
+\index{draw@{draw}!vlees::ProjectieScherm@{vlees::ProjectieScherm}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void vlees\+::\+Projectie\+Scherm\+::draw (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{window }\end{DoxyParamCaption})}
+
+for (auto\& movblok \+: movingblokken) \{ alleblokken.\+push\+\_\+back(movblok); \}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/projectiescherm.\+h\item 
+src/projectiescherm.\+cpp\end{DoxyCompactItemize}

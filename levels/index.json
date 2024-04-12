@@ -1,0 +1,36 @@
+{
+  "levels": [
+    {
+      "name": "Eerste stapjes",
+      "file": "level0.json"
+    },
+    {
+      "name": "Heel gelijkaardig",
+      "file": "level1.json"
+    },
+    {
+      "name": "Hoog",
+      "file": "level2.json"
+    },
+    {
+      "name": "Groot",
+      "file": "level3.json"
+    },
+    {
+      "name": "Prikkelbaar",
+      "file": "level4.json"
+    },
+    {
+      "name": "Beweging",
+      "file": "level5.json"
+    },
+    {
+      "name": "Veelbeweging",
+      "file": "level6.json"
+    },
+    {
+      "name": "Portalen",
+        "file": "level7.json"
+    }
+  ]
+}

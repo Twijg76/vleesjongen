@@ -1,0 +1,25 @@
+\hypertarget{touchside_8h_source}{}\doxysection{touchside.\+h}
+\label{touchside_8h_source}\index{src/events/touchside.h@{src/events/touchside.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_TOUCHSIDE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_TOUCHSIDE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}touchevent.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }vlees::event\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1event_1_1TouchSide}{TouchSide}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1event_1_1TouchEvent}{TouchEvent}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std::string\ side;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classvlees_1_1event_1_1TouchSide}{TouchSide}}(std::string\ side);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ [[maybe\_unused]]\ [[nodiscard]]\ std::string\ getSide()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ \}\ \textcolor{comment}{//\ namespace\ vlees::event}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_TOUCHSIDE\_H}}
+
+\end{DoxyCode}

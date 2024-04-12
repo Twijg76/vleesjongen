@@ -1,0 +1,62 @@
+\hypertarget{classvlees_1_1model_1_1MovingBlokModel}{}\doxysection{vlees\+::model\+::Moving\+Blok\+Model Class Reference}
+\label{classvlees_1_1model_1_1MovingBlokModel}\index{vlees::model::MovingBlokModel@{vlees::model::MovingBlokModel}}
+Inheritance diagram for vlees\+::model\+::Moving\+Blok\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.072702cm]{classvlees_1_1model_1_1MovingBlokModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1MovingBlokModel_a449774230270be4b4ccec2d6d4c68566}\label{classvlees_1_1model_1_1MovingBlokModel_a449774230270be4b4ccec2d6d4c68566}} 
+{\bfseries Moving\+Blok\+Model} (float x, float y, float xgoal, float ygoal)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1model_1_1MovableModel}{vlees\+::model\+::\+Movable\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvlees_1_1model_1_1MovableModel_a19563a56e1d3ce1ef6abf1df86c80639}{Movable\+Model}} (float x, float y, float xgoal, float ygoal, std\+::string type)
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1MovableModel_ab38c7fe3479590c8096dd46e6ada3afc}\label{classvlees_1_1model_1_1MovableModel_ab38c7fe3479590c8096dd46e6ada3afc}} 
+void {\bfseries move} (double timepassed)
+\item 
+void \mbox{\hyperlink{classvlees_1_1model_1_1MovableModel_af8d8b743ec0dc8cb3d4093fca4323b2c}{adjust\+Position}} (double seconds) override
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1MovableModel_a5d5885f2d7f14f942021d813aed4d333}\label{classvlees_1_1model_1_1MovableModel_a5d5885f2d7f14f942021d813aed4d333}} 
+void {\bfseries set\+Speed} (float xspeed, float yspeed)
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1MovableModel_adfb8b6a5426fbfd5292a7360d730353b}\label{classvlees_1_1model_1_1MovableModel_adfb8b6a5426fbfd5292a7360d730353b}} 
+\mbox{\hyperlink{classvlees_1_1Position}{Position}} {\bfseries get\+Position} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1model_1_1Model}{vlees\+::model\+::\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1Model_a42157699c79b494b29d779e02cb542be}\label{classvlees_1_1model_1_1Model_a42157699c79b494b29d779e02cb542be}} 
+virtual void {\bfseries adjust\+Position} (double seconds)=0
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1Model_abcb78a81d0df757644c7ad63ac194749}\label{classvlees_1_1model_1_1Model_abcb78a81d0df757644c7ad63ac194749}} 
+void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{vlees\+::observer\+::\+Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}\label{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}} 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{vlees\+::event\+::\+Base\+Event}} $>$ \&event)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Object}{vlees\+::observer\+::\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}\label{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}} 
+void {\bfseries attach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}\label{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}} 
+void {\bfseries detach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}\label{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}} 
+void {\bfseries notify} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/models/movingblokmodel.\+h\end{DoxyCompactItemize}

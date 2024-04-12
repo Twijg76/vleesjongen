@@ -1,0 +1,36 @@
+\hypertarget{movablemodel_8h_source}{}\doxysection{movablemodel.\+h}
+\label{movablemodel_8h_source}\index{src/models/movablemodel.h@{src/models/movablemodel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VLEESJONGEN\_MOVABLEMODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VLEESJONGEN\_MOVABLEMODEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../events/movablemovedevent.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../position.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}model.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <complex>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }vlees::model\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvlees_1_1model_1_1MovableModel}{MovableModel}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classvlees_1_1model_1_1Model}{Model}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ xspeed\ =\ 0;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ yspeed\ =\ 0;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ goal\ =\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(0,\ 0);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ from\ =\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(0,\ 0);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ position\ =\ \mbox{\hyperlink{classvlees_1_1Position}{Position}}(0,\ 0);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::string\ type;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1model_1_1MovableModel}{MovableModel}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ xgoal,\ \textcolor{keywordtype}{float}\ ygoal,\ std::string\ type);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1model_1_1MovableModel}{MovableModel}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ move(\textcolor{keywordtype}{double}\ timepassed);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ adjustPosition(\textcolor{keywordtype}{double}\ seconds)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ [[maybe\_unused]]\ \textcolor{keywordtype}{void}\ setSpeed(\textcolor{keywordtype}{float}\ xspeed,\ \textcolor{keywordtype}{float}\ yspeed);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classvlees_1_1Position}{Position}}\ getPosition()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ \}\ \textcolor{comment}{//\ namespace\ vlees::model}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VLEESJONGEN\_MOVABLEMODEL\_H}}
+
+\end{DoxyCode}

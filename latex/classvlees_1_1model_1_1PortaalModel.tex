@@ -1,0 +1,89 @@
+\hypertarget{classvlees_1_1model_1_1PortaalModel}{}\doxysection{vlees\+::model\+::Portaal\+Model Class Reference}
+\label{classvlees_1_1model_1_1PortaalModel}\index{vlees::model::PortaalModel@{vlees::model::PortaalModel}}
+Inheritance diagram for vlees\+::model\+::Portaal\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.304527cm]{classvlees_1_1model_1_1PortaalModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_ace4060f8afbeaa8b21942a7dee03ed45}\label{classvlees_1_1model_1_1PortaalModel_ace4060f8afbeaa8b21942a7dee03ed45}} 
+{\bfseries Portaal\+Model} (const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&up, const \mbox{\hyperlink{classvlees_1_1Position}{Position}} \&down, char id)
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_aa42b5cbcb0edf61413550c6865cc34be}\label{classvlees_1_1model_1_1PortaalModel_aa42b5cbcb0edf61413550c6865cc34be}} 
+\mbox{\hyperlink{classvlees_1_1Position}{Position}} {\bfseries get\+Up\+Position} () const
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_abbef9917616fe0f9505cca7ad25b051d}\label{classvlees_1_1model_1_1PortaalModel_abbef9917616fe0f9505cca7ad25b051d}} 
+\mbox{\hyperlink{classvlees_1_1Position}{Position}} {\bfseries get\+Down\+Position} () const
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_a2ce83023d84341718f5b17ac39f147dd}\label{classvlees_1_1model_1_1PortaalModel_a2ce83023d84341718f5b17ac39f147dd}} 
+\mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{Portaal\+Model}} \& {\bfseries operator==} (const \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel}{Portaal\+Model}} \&other)
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_a4dd0c04625caa6dbfce82d6aabfadda1}\label{classvlees_1_1model_1_1PortaalModel_a4dd0c04625caa6dbfce82d6aabfadda1}} 
+char {\bfseries get\+Id} () const
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_aa29389c16bc132dc147e764e79fd91b4}\label{classvlees_1_1model_1_1PortaalModel_aa29389c16bc132dc147e764e79fd91b4}} 
+void {\bfseries add\+Down} (\mbox{\hyperlink{classvlees_1_1Position}{Position}} point)
+\item 
+void \mbox{\hyperlink{classvlees_1_1model_1_1PortaalModel_af763748b774f224e9ef005330ecfb98a}{adjust\+Position}} (double seconds) override
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_af8993615c8e1fa96f63eeeb938c630b6}\label{classvlees_1_1model_1_1PortaalModel_af8993615c8e1fa96f63eeeb938c630b6}} 
+std\+::string {\bfseries get\+Up\+Richting} () const
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_a87c6e87a0b0fa738b018ee547dfe1f74}\label{classvlees_1_1model_1_1PortaalModel_a87c6e87a0b0fa738b018ee547dfe1f74}} 
+std\+::string {\bfseries get\+Down\+Richting} () const
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_a46b5f95ed9f49ecdf9251873bbfae6c7}\label{classvlees_1_1model_1_1PortaalModel_a46b5f95ed9f49ecdf9251873bbfae6c7}} 
+void {\bfseries set\+Up\+Richting} (std\+::string richting)
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_a9b4b22287337b992b99c2c7034bb478c}\label{classvlees_1_1model_1_1PortaalModel_a9b4b22287337b992b99c2c7034bb478c}} 
+void {\bfseries set\+Down\+Richting} (std\+::string richting)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1model_1_1Model}{vlees\+::model\+::\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1Model_a42157699c79b494b29d779e02cb542be}\label{classvlees_1_1model_1_1Model_a42157699c79b494b29d779e02cb542be}} 
+virtual void {\bfseries adjust\+Position} (double seconds)=0
+\item 
+\mbox{\Hypertarget{classvlees_1_1model_1_1Model_abcb78a81d0df757644c7ad63ac194749}\label{classvlees_1_1model_1_1Model_abcb78a81d0df757644c7ad63ac194749}} 
+void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{vlees\+::observer\+::\+Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}\label{classvlees_1_1observer_1_1Observer_afad5b6492326b93a10e8c865f97e936a}} 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{vlees\+::event\+::\+Base\+Event}} $>$ \&event)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{classvlees_1_1observer_1_1Object}{vlees\+::observer\+::\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}\label{classvlees_1_1observer_1_1Object_a06dc4846a379ddc155a269e6120d5f21}} 
+void {\bfseries attach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}\label{classvlees_1_1observer_1_1Object_aa0023db6f0b6ebbc698a2a70a77b988f}} 
+void {\bfseries detach} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1observer_1_1Observer}{Observer}} $>$ \&observer)
+\item 
+\mbox{\Hypertarget{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}\label{classvlees_1_1observer_1_1Object_a11427859161ffe61d608209dec3ef779}} 
+void {\bfseries notify} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classvlees_1_1event_1_1BaseEvent}{event\+::\+Base\+Event}} $>$ \&event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlees_1_1model_1_1PortaalModel_af763748b774f224e9ef005330ecfb98a}\label{classvlees_1_1model_1_1PortaalModel_af763748b774f224e9ef005330ecfb98a}} 
+\index{vlees::model::PortaalModel@{vlees::model::PortaalModel}!adjustPosition@{adjustPosition}}
+\index{adjustPosition@{adjustPosition}!vlees::model::PortaalModel@{vlees::model::PortaalModel}}
+\doxysubsubsection{\texorpdfstring{adjustPosition()}{adjustPosition()}}
+{\footnotesize\ttfamily void vlees\+::model\+::\+Portaal\+Model\+::adjust\+Position (\begin{DoxyParamCaption}\item[{double}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvlees_1_1model_1_1Model}{vlees\+::model\+::\+Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/models/portaalmodel.\+h\item 
+src/models/portaalmodel.\+cpp\end{DoxyCompactItemize}

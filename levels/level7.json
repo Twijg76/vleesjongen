@@ -1,0 +1,36 @@
+{
+  "layout": [
+    "___0__d__1",
+    "_______d",
+    "__xxxxxxxxx",
+    "",
+    "",
+    "m__________m",
+    "",
+    "__0___j___1",
+    "xxxxxxxxxxxxx"
+  ],
+  "automove": 0,
+  "movers": [
+    {
+      "up" : 0,
+      "right": 10,
+      "type": "s"
+    },
+    {
+      "up" : 0,
+      "right": -10,
+      "type": "s"
+    }
+  ],
+  "portals": {
+    "1": {
+      "upricht": "up",
+        "downricht": "left"
+    },
+    "0": {
+      "upricht": "right",
+      "downricht": "right"
+    }
+  }
+}
